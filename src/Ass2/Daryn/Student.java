@@ -18,7 +18,7 @@ public final class Student extends Human implements ILearnable {
     public void setFaculty(String faculty) { this.faculty = faculty; }
     public float getAverageGrade() { return averageGrade; }
     public void setAverageGrade(float averageGrade) { this.averageGrade = averageGrade; }
-    public String getStudentId() { return studentId; }  // только геттер
+    public String getStudentId() { return studentId; }  
 
     @Override
     public void displayRoleInfo() {
