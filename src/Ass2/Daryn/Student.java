@@ -38,7 +38,6 @@ public final class Student extends Human implements ILearnable {
         System.out.println(getName() + " passed the exam in " + subject + "!");
     }
 
-    // 5. final метод
     public final void graduate() {
         System.out.println(getName() + " has graduated from university! Congratulations!");
     }
