@@ -4,7 +4,6 @@ public final class Student extends Human implements ILearnable {
     private String faculty;
     private float averageGrade;
 
-    // 5. final поле
     private final String studentId;
 
     public Student(int age, String name, boolean isMarried,
@@ -15,7 +14,6 @@ public final class Student extends Human implements ILearnable {
         this.studentId = studentId;
     }
 
-    // Геттеры и сеттеры
     public String getFaculty() { return faculty; }
     public void setFaculty(String faculty) { this.faculty = faculty; }
     public float getAverageGrade() { return averageGrade; }
@@ -30,7 +28,6 @@ public final class Student extends Human implements ILearnable {
                 ", ID: " + studentId);
     }
 
-    // Методы из ILearnable
     @Override
     public void study() {
         System.out.println(getName() + " is studying at " + faculty + " faculty.");
