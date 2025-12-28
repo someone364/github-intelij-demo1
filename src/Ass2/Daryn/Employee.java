@@ -13,7 +13,6 @@ public class Employee extends Human implements IWorkable, ILearnable {
         employeeCount++;
     }
 
-    // Геттеры и сеттеры
     public String getPosition() { return position; }
     public void setPosition(String position) { this.position = position; }
     public float getSalary() { return salary; }
@@ -27,7 +26,6 @@ public class Employee extends Human implements IWorkable, ILearnable {
                 ", Income: " + salary);
     }
 
-    // Методы из IWorkable
     @Override
     public void work() {
         System.out.println(getName() + " is working as " + position + ".");
@@ -38,7 +36,6 @@ public class Employee extends Human implements IWorkable, ILearnable {
         System.out.println(getName() + " is taking a break.");
     }
 
-    // Методы из ILearnable
     @Override
     public void study() {
         System.out.println(getName() + " is attending professional training.");
