@@ -1,7 +1,6 @@
 package Ass2.Daryn;
 
 public abstract class Human {
-    // 6. Поля теперь protected
     protected int age;
     protected String name;
     protected boolean isMarried;
@@ -17,15 +16,12 @@ public abstract class Human {
                 ", Married?: " + (isMarried ? "yes" : "no"));
     }
 
-    // 4. Абстрактный метод — обязателен для реализации в наследниках
     public abstract void displayRoleInfo();
 
-    // Обычный метод
     public void introduce() {
         System.out.println("Hello, my name is " + name + ".");
     }
 
-    // Геттеры и сеттеры
     public int getAge() { return age; }
     public void setAge(int age) { this.age = age; }
     public String getName() { return name; }
